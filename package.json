@@ -1,0 +1,24 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playright test",
+    "WebTests": "npx playright test -- grep @Web",
+    "APITests": "npx playright test -- grep @API",
+    "SafariNewConfig": "npx playright test --config playright.config1.js --project chrome",
+    "CucumberRegression" :"npx cucumber-js --tags 'Regression' --retry 1 --exit --format html:cucmber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.7.4"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "exceljs": "4.4.0"
+  }
+}

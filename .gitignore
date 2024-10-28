@@ -1,0 +1,13 @@
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/.vs/
+!playwrightAutomation/
+!playwrightAutomation/**
+# Ignore all video files
+*.mp4
+
+# Ignore the specific Videos directory
+Videos/
